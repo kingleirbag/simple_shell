@@ -42,6 +42,6 @@ int fork_process(char **path_val, char **prgrm_nme, char **envp,
 				return (WEXITSTATUS(exit_status));
 			}
 		}
-		return (0);
 	}
+	return (0);
 }
