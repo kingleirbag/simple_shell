@@ -3,8 +3,10 @@
 /**
  * concat_string - Function that concatenate the contents of
  * source onto the end of destination.
+ *
  * @destination: string to be copied to.
  * @source: string that will be copied from.
+ *
  * Return: A pointer to the concatenated string.
  */
 char *concat_string(char *destination, char *source)
