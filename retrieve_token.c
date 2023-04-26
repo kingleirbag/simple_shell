@@ -4,6 +4,7 @@
  * retrieve_token - Takes a string user_input as input.
  * @user_input: Pointer to a character, which points
  * to a string of characters entered by the user.
+ *
  * Return: Pointer to a char pointer which contains
  * the tokenized user input.
  */
