@@ -3,8 +3,10 @@
 /**
  * compute_string_segment - Checking if each character in
  * first string is present in the second string.
+ *
  * @str1: First string.
  * @str2: Second string.
+ *
  * Return: If a character is encountered that is present
  * in the second string, it returns the number of
  * characters that were iterated through before that point.
