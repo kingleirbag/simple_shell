@@ -3,7 +3,9 @@
 /**
  * get_environment_path - Function that gets the
  * path of the environment variable.
+ *
  * @envp: The environment variable.
+ *
  * Return: Environment path value.
  */
 char *get_environment_path(char **envp)
