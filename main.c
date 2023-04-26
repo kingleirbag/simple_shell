@@ -4,10 +4,13 @@
  * main - Entry point of the program.
  * @acounter: Integer that represents the number
  * of arguments passed to the program.
+ *
  * @avector: Pointer to an array of strings representing
  * command-line arguments passed to program.
+ *
  * @env: Pointer to an array of strings representing
  * the environment variables.
+ *
  * Return: Always 0.
  */
 int main(int acounter, char **avector, char **env)
