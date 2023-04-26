@@ -2,6 +2,7 @@
 
 /**
  * prompt - Displays the prompt "cisfun$ ".
+ *
  * Return: User input string.
  */
 char *prompt(void)
