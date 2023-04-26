@@ -3,8 +3,10 @@
 /**
  * character_occurence - A Function that searches for the
  * first occurrence of a specified character in a string.
+ *
  * @chtr: The character to be searched for.
  * @str: A pointer to the string to be searched.
+ *
  * Return: Pointer to location of character in the string.
  */
 
