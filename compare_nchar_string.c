@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * compare_string - Compares two strings
+ * compare_nchar_string - Compares two strings
  * up to a specified number of characters.
  *
  * @string1: Pointer to string 1.
