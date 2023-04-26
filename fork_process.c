@@ -9,6 +9,7 @@
  * @prcs_id: Variable that represents the process ID of current process.
  * @checker: Boolean flag that indicates whether path_val array
  * was dynamically allocated and needs to be freed.
+ *
  * Return: 0(Always).
  */
 int fork_process(char **path_val, char **prgrm_nme, char **envp,
