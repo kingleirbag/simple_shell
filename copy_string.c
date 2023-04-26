@@ -3,8 +3,7 @@
 /**
  * copy_string - Function that copies a string from source to destination.
  * @destination: Destination string.
- * @source:  Source string.
- *
+ * @source: Source string.
  * Return: Destination.
  */
 char *copy_string(char *destination, char *source)
@@ -17,6 +16,5 @@ char *copy_string(char *destination, char *source)
 		++counter;
 	}
 	*(destination + counter) = *(source + counter);
-
 	return (destination);
 }

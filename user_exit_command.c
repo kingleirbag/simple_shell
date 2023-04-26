@@ -5,6 +5,7 @@
  * @alloc_mem: Pointer to the allocated memory.
  * @input_cmd: User input command.
  * @exit_cmd: The exit value.
+ * Return: void
  */
 void user_exit_command(char **alloc_mem, char *input_cmd, int exit_cmd)
 {

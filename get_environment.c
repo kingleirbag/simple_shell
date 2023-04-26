@@ -3,7 +3,6 @@
 /**
  * get_environment - A function that takes in the envp argument.
  * @envp: Environment variable.
- *
  * Return: Void.
  */
 void get_environment(char **envp)

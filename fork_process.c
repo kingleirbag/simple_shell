@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * fork_process - Function that creates a child process.
+ * fork_process - Creates a child process.
  * @path_val: Array of strings with possible paths for execution.
  * @prgrm_nme: Array of strings with name of the program being executed.
  * @envp: Environment for the executed program.
@@ -9,15 +9,14 @@
  * @prcs_id: Variable that represents the process ID of current process.
  * @checker: Boolean flag that indicates whether path_val array
  * was dynamically allocated and needs to be freed.
- *
- * Return: 0 or exit status
+ * Return: 0(Always).
  */
 int fork_process(char **path_val, char **prgrm_nme, char **envp,
 		char *cmd_ln, int prcs_id, int checker)
 {
 	pid_t child_process;
 	int exit_status;
-	char *error_format = "%s: %d: %s :command not found\n";
+	char *error_format = "%s: %d: %s: not found\n";
 
 	child_process = fork();
 
@@ -34,13 +33,13 @@ int fork_process(char **path_val, char **prgrm_nme, char **envp,
 			free(cmd_ln);
 			exit(errno);
 		}
-		else
+	}
+	else
+	{
+		wait(&exit_status);
+		if (WIFEXITED(exit_status) && WEXITSTATUS(exit_status) != 0)
 		{
-			wait(&exit_status);
-			if (WIFEXITED(exit_status) && WEXITSTATUS(exit_status) != 0)
-			{
-				return (WEXITSTATUS(exit_status));
-			}
+			return (WEXITSTATUS(exit_status));
 		}
 	}
 	return (0);

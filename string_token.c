@@ -4,9 +4,8 @@
  * string_token - splits the first string into tokens
  * @str: String to tokenize.
  * @str_delim: Delimiter string.
- *
  * Return: String.
- **/
+ */
 char *string_token(char *str, const char *str_delim)
 {
 	static char *token;

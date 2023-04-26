@@ -4,7 +4,6 @@
  * compare_string - compare two strings.
  * @s1: The first string to be compared.
  * @s2: The second string to be compared.
- *
  * Return: 0.
  */
 int compare_string(char *s1, char *s2)
